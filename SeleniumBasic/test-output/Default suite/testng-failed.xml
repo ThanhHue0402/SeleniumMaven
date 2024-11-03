@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomeWork_Day7.TestEmployee">
+      <class name="HomeWork_Day7.HomeWork_Day8">
         <methods>
-          <include name="setup"/>
-          <include name="testPrintEmployeeNames"/>
-          <include name="tearDown"/>
+          <include name="getLocatorJavaScriptAlerts"/>
+          <include name="openChrome"/>
         </methods>
-      </class> <!-- HomeWork_Day7.TestEmployee -->
+      </class> <!-- HomeWork_Day7.HomeWork_Day8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
