@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day12_Dropdownlist">
+      <class name="HomeWork_Day13.HomeWork_13">
         <methods>
-          <include name="chooseCountryOption"/>
           <include name="openWebPage"/>
+          <include name="Logout"/>
         </methods>
-      </class> <!-- automation.testsuite.Day12_Dropdownlist -->
+      </class> <!-- HomeWork_Day13.HomeWork_13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
