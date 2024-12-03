@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomeWork_Day13.HomeWork_13">
+      <class name="automation.testsuite.QuanLyNguoiDungTest">
         <methods>
-          <include name="openWebPage"/>
-          <include name="Logout"/>
+          <include name="ThemNguoiDung"/>
+          <include name="OpenFireFox"/>
         </methods>
-      </class> <!-- HomeWork_Day13.HomeWork_13 -->
+      </class> <!-- automation.testsuite.QuanLyNguoiDungTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

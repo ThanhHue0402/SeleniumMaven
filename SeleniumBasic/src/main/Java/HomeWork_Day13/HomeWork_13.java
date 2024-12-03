@@ -18,7 +18,7 @@ import bsh.Primitive;
 public class HomeWork_13 extends CommonBase {
 	@BeforeMethod
 	public void openWebPage() {
-		driver = initFireFoxDriver(CT_PageURL_java.crmstar);
+		driver = initFireFoxDriver(CT_PageURL_java.crmCodeStar);
 
 	}
 
