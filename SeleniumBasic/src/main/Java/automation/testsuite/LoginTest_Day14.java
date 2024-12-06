@@ -16,10 +16,11 @@ public class LoginTest_Day14 extends CommonBase{
 		
 	}
 	@Test(priority=1)
-	public void Login()  {
+	public void LoginFail() throws InterruptedException {
 		LoginPage_Day14  login = new LoginPage_Day14(driver);
 		login.LoginFunction("admin@gmail.com","12345678");
-//		Thread.sleep(5000);
+		Thread.sleep(5000);
 		assertTrue(driver.findElement(By.xpath("//p[text()='Quản lý người dùng']")).isDisplayed());
 	}
+
 }

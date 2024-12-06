@@ -18,6 +18,8 @@ public class QuanLyNguoiDung_Page {
 	@FindBy(name="workarea_id") WebElement dropdownKhuVuclamViec;
 	@FindBy(name="code_user") WebElement textMaNguoiDung;
 	@FindBy(xpath = "//button[text()='Lưu']") WebElement bttnluu;
+	@FindBy(xpath = "//button[text()='Thêm' and @class='btn btn-success']") WebElement bttnXacNhan;
+
 	public QuanLyNguoiDung_Page(WebDriver driver) {
 		super();
 		this.driver = driver;
@@ -38,27 +40,14 @@ public class QuanLyNguoiDung_Page {
 		selectKhuVucLamViec.selectByValue(chucdanh);
 		textMaNguoiDung.sendKeys(maNguoiDung);
 		bttnluu.click();
+		bttnXacNhan.click();
+
+
 		
 	}
-	
-	//BTVN: case1 - Thêm người dùng thành công
-//	
-//	public void ThemNguoiDung(String hoVaTen, String email, String sodienthoai, String phongban, String chucdanh, String khuVuclamViec, String maNguoiDung ) {
-//		bttnThemMoi.click();
-//		textName.sendKeys(hoVaTen);
-//		textEmail.sendKeys(email);
-//		textPhoneNumber.sendKeys(sodienthoai);
-//		Select selectPhongBan = new Select(dropdownPhongBan);
-//		selectPhongBan.selectByValue(phongban);
-//		Select selectChucDanh = new Select(dropdownChucDanh);
-//		selectChucDanh.selectByValue(chucdanh);
-//		Select selectKhuVucLamViec = new Select(dropdownKhuVuclamViec);
-//		selectKhuVucLamViec.selectByValue(chucdanh);
-//		textMaNguoiDung.sendKeys(maNguoiDung);
-//		bttnluu.click();
-//	
+
 	//BTVN: cas2 - Xóa người dùng sau khi thêm 
-//
-//	}
+
+
 	
 }
