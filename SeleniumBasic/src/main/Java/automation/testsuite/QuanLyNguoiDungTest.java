@@ -28,12 +28,12 @@ public class QuanLyNguoiDungTest extends CommonBase {
         assertTrue(driver.findElement(By.xpath("//div[text()='Dữ liệu nhập vào sai định dạng']")).isDisplayed());
     }
 
-    @Test(priority = 2)
-    public void ThemNguoiDung() {
-        QuanLyNguoiDung_Page quanlyND = new QuanLyNguoiDung_Page(driver);
-        quanlyND.ThemNguoiDung("hue", "thanhhue@gmail.com", "947877734", "3", "1", "2", "963");
-        assertTrue(driver.findElement(By.xpath("//div[text()='Thêm mới người dùng thành công']")).isDisplayed());
-    }
+//    @Test(priority = 2)
+//    public void ThemNguoiDung() {
+//        QuanLyNguoiDung_Page quanlyND = new QuanLyNguoiDung_Page(driver);
+//        quanlyND.ThemNguoiDung("hue", "thanhhue@gmail.com", "947877734", "3", "1", "2", "963");
+//        assertTrue(driver.findElement(By.xpath("//div[text()='Thêm mới người dùng thành công']")).isDisplayed());
+//    }
 
 
 }

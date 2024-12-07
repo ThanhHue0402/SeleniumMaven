@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.QuanLyNguoiDungTest">
+      <class name="automation.testsuite.LoginAladaTest_HomeWorkDay14">
         <methods>
-          <include name="ThemNguoiDung"/>
-          <include name="OpenFireFox"/>
+          <include name="Login"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- automation.testsuite.QuanLyNguoiDungTest -->
+      </class> <!-- automation.testsuite.LoginAladaTest_HomeWorkDay14 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
