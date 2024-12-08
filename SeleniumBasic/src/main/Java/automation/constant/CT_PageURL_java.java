@@ -7,6 +7,8 @@ public static String globalSQ= "https://www.globalsqa.com/demo-site/select-dropd
 public static String crmCodeStar="http://test-system.crmstar.vn/";
 public static String alada ="https://alada.vn/";
 public static String tedu="https://tedu.com.vn/"; 
-
+public static String GURUWINDOWS ="https://demo.guru99.com/popup.php";
+public static String CODESTART="https://codestar.vn/";
+public static String BEPANTOAN="https://bepantoan.vn/"; 
 
 }

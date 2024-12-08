@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Tedu_CapNhatyMatKhauTest">
+      <class name="automation.testsuite.Day17_WindowsPopUp">
         <methods>
-          <include name="DangNhapThanhCong"/>
+          <include name="handleWindows"/>
           <include name="openChrome"/>
-          <include name="Search"/>
         </methods>
-      </class> <!-- automation.testsuite.Tedu_CapNhatyMatKhauTest -->
+      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

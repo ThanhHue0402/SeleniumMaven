@@ -3,8 +3,10 @@ package automation.testsuite;
 import static org.testng.Assert.assertTrue;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -42,6 +44,7 @@ public class Tedu_CapNhatyMatKhauTest extends CommonBase{
 	public void DangNhapThanhCong() throws InterruptedException {
 		Thread.sleep(3000);
 		teduPage.CloseNotification();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		teduPage.DangNhap("dangthithanhhue723@gmail.com", currentPass);
 		assertTrue(driver.findElement(By.xpath("//a[@title='Tài khoản' and @data-toggle='dropdown']")).isDisplayed());
 	}
@@ -53,5 +56,11 @@ public class Tedu_CapNhatyMatKhauTest extends CommonBase{
 		assertTrue(driver.findElement(By.linkText("Bài 52: Gửi phản hồi và gửi mail trong ASP NET sử dụng SMTP")).isDisplayed());
 	}
 	
+	
+	@AfterTest
+	public void closeBrowser() {
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		driver.close();
+	}
 
 }
