@@ -6,4 +6,7 @@ public static String codeStar= "https://codestar.vn/product-category/aws/";
 public static String globalSQ= "https://www.globalsqa.com/demo-site/select-dropdown-menu/";
 public static String crmCodeStar="http://test-system.crmstar.vn/";
 public static String alada ="https://alada.vn/";
+public static String tedu="https://tedu.com.vn/"; 
+
+
 }
