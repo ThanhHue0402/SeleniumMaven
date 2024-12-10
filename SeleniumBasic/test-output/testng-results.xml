@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-08T21:36:07 ICT" name="Default suite" finished-at="2024-12-08T21:36:36 ICT" duration-ms="28943">
+  <suite started-at="2024-12-10T22:01:19 ICT" name="Default suite" finished-at="2024-12-10T22:01:38 ICT" duration-ms="18636">
     <groups>
     </groups>
-    <test started-at="2024-12-08T21:36:07 ICT" name="Default test" finished-at="2024-12-08T21:36:36 ICT" duration-ms="28943">
-      <class name="automation.testsuite.Day17_WindowsPopUp">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@28f2a10f]" started-at="2024-12-08T21:36:07 ICT" name="openChrome" finished-at="2024-12-08T21:36:31 ICT" duration-ms="24370" status="PASS">
+    <test started-at="2024-12-10T22:01:19 ICT" name="Default test" finished-at="2024-12-10T22:01:38 ICT" duration-ms="18636">
+      <class name="automation.testsuite.Mediamart_Day17">
+        <test-method is-config="true" signature="copenChrome()[pri:0, instance:automation.testsuite.Mediamart_Day17@28f2a10f]" started-at="2024-12-10T22:01:19 ICT" name="copenChrome" finished-at="2024-12-10T22:01:27 ICT" duration-ms="8149" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="handleWindows()[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@28f2a10f]" started-at="2024-12-08T21:36:31 ICT" name="handleWindows" finished-at="2024-12-08T21:36:36 ICT" duration-ms="4525" status="PASS">
+        </test-method> <!-- copenChrome -->
+        <test-method signature="messenger()[pri:0, instance:automation.testsuite.Mediamart_Day17@28f2a10f]" started-at="2024-12-10T22:01:27 ICT" name="messenger" finished-at="2024-12-10T22:01:38 ICT" duration-ms="10446" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handleWindows -->
-      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
+        </test-method> <!-- messenger -->
+      </class> <!-- automation.testsuite.Mediamart_Day17 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

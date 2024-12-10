@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day17_WindowsPopUp">
+      <class name="automation.testsuite.Mediamart_Day17">
         <methods>
-          <include name="handleWindows"/>
-          <include name="openChrome"/>
+          <include name="copenChrome"/>
+          <include name="zaloChat"/>
         </methods>
-      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
+      </class> <!-- automation.testsuite.Mediamart_Day17 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,5 +10,6 @@ public static String tedu="https://tedu.com.vn/";
 public static String GURUWINDOWS ="https://demo.guru99.com/popup.php";
 public static String CODESTART="https://codestar.vn/";
 public static String BEPANTOAN="https://bepantoan.vn/"; 
+public static String MEDIAMART="https://mediamart.vn/";
 
 }
