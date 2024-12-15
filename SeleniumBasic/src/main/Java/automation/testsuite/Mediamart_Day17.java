@@ -17,7 +17,8 @@ public class Mediamart_Day17 extends CommonBase {
 
 	@BeforeMethod
 	public void copenChrome() {
-		driver = initChromeDriver(CT_PageURL_java.MEDIAMART); 
+//		driver = initChromeDriver(CT_PageURL_java.MEDIAMART); 
+		driver= initMSEdgeDriver(CT_PageURL_java.MEDIAMART);
 	}
 	
 	@Test
@@ -38,4 +39,6 @@ public class Mediamart_Day17 extends CommonBase {
         assertTrue(isElementPresent(By.className("card__content")));
     }
 
+	
+	
 }

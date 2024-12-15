@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-10T22:01:19 ICT" name="Default suite" finished-at="2024-12-10T22:01:38 ICT" duration-ms="18636">
+  <suite started-at="2024-12-15T17:57:04 ICT" name="TestSuite" finished-at="2024-12-15T17:57:59 ICT" duration-ms="55063">
     <groups>
     </groups>
-    <test started-at="2024-12-10T22:01:19 ICT" name="Default test" finished-at="2024-12-10T22:01:38 ICT" duration-ms="18636">
-      <class name="automation.testsuite.Mediamart_Day17">
-        <test-method is-config="true" signature="copenChrome()[pri:0, instance:automation.testsuite.Mediamart_Day17@28f2a10f]" started-at="2024-12-10T22:01:19 ICT" name="copenChrome" finished-at="2024-12-10T22:01:27 ICT" duration-ms="8149" status="PASS">
+    <test started-at="2024-12-15T17:57:04 ICT" name="Regression test all classes on firefox" finished-at="2024-12-15T17:57:31 ICT" duration-ms="26718">
+      <class name="automation.testsuite.DienMayNhapKhau">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.DienMayNhapKhau@7205765b]" started-at="2024-12-15T17:57:04 ICT" name="openBrowser" finished-at="2024-12-15T17:57:16 ICT" duration-ms="11753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- copenChrome -->
-        <test-method signature="messenger()[pri:0, instance:automation.testsuite.Mediamart_Day17@28f2a10f]" started-at="2024-12-10T22:01:27 ICT" name="messenger" finished-at="2024-12-10T22:01:38 ICT" duration-ms="10446" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="zaloChat()[pri:0, instance:automation.testsuite.DienMayNhapKhau@7205765b]" started-at="2024-12-15T17:57:16 ICT" name="zaloChat" finished-at="2024-12-15T17:57:17 ICT" duration-ms="540" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- messenger -->
-      </class> <!-- automation.testsuite.Mediamart_Day17 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- zaloChat -->
+      </class> <!-- automation.testsuite.DienMayNhapKhau -->
+      <class name="automation.testsuite.Day17_WindowsPopUp">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@2c1b194a]" started-at="2024-12-15T17:57:17 ICT" name="openBrowser" finished-at="2024-12-15T17:57:26 ICT" duration-ms="9678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="handleWindows()[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@2c1b194a]" started-at="2024-12-15T17:57:26 ICT" name="handleWindows" finished-at="2024-12-15T17:57:31 ICT" duration-ms="4690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleWindows -->
+      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
+    </test> <!-- Regression test all classes on firefox -->
+    <test started-at="2024-12-15T17:57:31 ICT" name="Regression test all classes on edge" finished-at="2024-12-15T17:57:59 ICT" duration-ms="28274">
+      <class name="automation.testsuite.DienMayNhapKhau">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.DienMayNhapKhau@121314f7]" started-at="2024-12-15T17:57:31 ICT" name="openBrowser" finished-at="2024-12-15T17:57:41 ICT" duration-ms="9391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="zaloChat()[pri:0, instance:automation.testsuite.DienMayNhapKhau@121314f7]" started-at="2024-12-15T17:57:41 ICT" name="zaloChat" finished-at="2024-12-15T17:57:42 ICT" duration-ms="1184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zaloChat -->
+      </class> <!-- automation.testsuite.DienMayNhapKhau -->
+      <class name="automation.testsuite.Day17_WindowsPopUp">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@130c12b7]" started-at="2024-12-15T17:57:42 ICT" name="openBrowser" finished-at="2024-12-15T17:57:52 ICT" duration-ms="9799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="handleWindows()[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@130c12b7]" started-at="2024-12-15T17:57:52 ICT" name="handleWindows" finished-at="2024-12-15T17:57:59 ICT" duration-ms="7894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleWindows -->
+      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
+    </test> <!-- Regression test all classes on edge -->
+  </suite> <!-- TestSuite -->
 </testng-results>

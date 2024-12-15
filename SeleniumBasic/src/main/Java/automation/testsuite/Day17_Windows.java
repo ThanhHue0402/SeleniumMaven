@@ -9,15 +9,21 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
 
 import automation.common.CommonBase;
 import automation.constant.CT_PageURL_java;
 
 public class Day17_Windows extends CommonBase {
 	@BeforeMethod
-	public void openBrowser() {
-		driver = initChromeDriver(CT_PageURL_java.GURUWINDOWS);
+	@Parameters("browser")
+	public void openBrowser(String browserName) {
+//		driver = initChromeDriver(CT_PageURL_java.GURUWINDOWS);
+		setupDriver(browserName);
+		driver.get(CT_PageURL_java.GURUWINDOWS);
 	}
 
 	@Test

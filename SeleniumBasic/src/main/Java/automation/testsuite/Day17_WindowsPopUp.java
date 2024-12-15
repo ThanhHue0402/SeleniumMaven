@@ -7,6 +7,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CommonBase;
@@ -14,8 +15,11 @@ import automation.constant.CT_PageURL_java;
 
 public class Day17_WindowsPopUp extends CommonBase {
 	@BeforeMethod
-	public void openChrome() {
-		driver = initFireFoxDriver(CT_PageURL_java.BEPANTOAN);
+	@Parameters("browser")
+	public void openBrowser(String browserName) {
+		setupDriver(browserName);
+		driver.get(CT_PageURL_java.BEPANTOAN);
+		
 	}
 
 	@Test

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Mediamart_Day17">
+      <class name="automation.testsuite.DienMayNhapKhau">
         <methods>
-          <include name="copenChrome"/>
+          <include name="openBrowser"/>
           <include name="zaloChat"/>
         </methods>
-      </class> <!-- automation.testsuite.Mediamart_Day17 -->
+      </class> <!-- automation.testsuite.DienMayNhapKhau -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
