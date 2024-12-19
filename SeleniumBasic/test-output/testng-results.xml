@@ -1,81 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-15T17:57:04 ICT" name="TestSuite" finished-at="2024-12-15T17:57:59 ICT" duration-ms="55063">
+  <suite started-at="2024-12-19T23:21:10 ICT" name="Default suite" finished-at="2024-12-19T23:21:39 ICT" duration-ms="28629">
     <groups>
     </groups>
-    <test started-at="2024-12-15T17:57:04 ICT" name="Regression test all classes on firefox" finished-at="2024-12-15T17:57:31 ICT" duration-ms="26718">
-      <class name="automation.testsuite.DienMayNhapKhau">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.DienMayNhapKhau@7205765b]" started-at="2024-12-15T17:57:04 ICT" name="openBrowser" finished-at="2024-12-15T17:57:16 ICT" duration-ms="11753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-12-19T23:21:10 ICT" name="Default test" finished-at="2024-12-19T23:21:39 ICT" duration-ms="28629">
+      <class name="automation.testsuite.SortMayRuaChenBatTest">
+        <test-method is-config="true" signature="OpenFireFox()[pri:0, instance:automation.testsuite.SortMayRuaChenBatTest@4229bb3f]" started-at="2024-12-19T23:21:10 ICT" name="OpenFireFox" finished-at="2024-12-19T23:21:20 ICT" duration-ms="9982" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="zaloChat()[pri:0, instance:automation.testsuite.DienMayNhapKhau@7205765b]" started-at="2024-12-15T17:57:16 ICT" name="zaloChat" finished-at="2024-12-15T17:57:17 ICT" duration-ms="540" status="PASS">
+        </test-method> <!-- OpenFireFox -->
+        <test-method signature="SortHang()[pri:0, instance:automation.testsuite.SortMayRuaChenBatTest@4229bb3f]" started-at="2024-12-19T23:21:20 ICT" name="SortHang" finished-at="2024-12-19T23:21:39 ICT" duration-ms="18600" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference f0caa20a-e4bf-4ae3-af7f-8d570d6ea3dd is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bfe34495-fe0c-4c65-a5c7-362c389daa4a, findChildElement {id=f0caa20a-e4bf-4ae3-af7f-8d570d6ea3dd, using=css selector, value=h4.title-card}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18076, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: bfe34495-fe0c-4c65-a5c7-362c389daa4a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference f0caa20a-e4bf-4ae3-af7f-8d570d6ea3dd is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bfe34495-fe0c-4c65-a5c7-362c389daa4a, findChildElement {id=f0caa20a-e4bf-4ae3-af7f-8d570d6ea3dd, using=css selector, value=h4.title-card}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18076, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: bfe34495-fe0c-4c65-a5c7-362c389daa4a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:212)
+at automation.testsuite.SortMayRuaChenBatTest.SortHang(SortMayRuaChenBatTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zaloChat -->
-      </class> <!-- automation.testsuite.DienMayNhapKhau -->
-      <class name="automation.testsuite.Day17_WindowsPopUp">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@2c1b194a]" started-at="2024-12-15T17:57:17 ICT" name="openBrowser" finished-at="2024-12-15T17:57:26 ICT" duration-ms="9678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="handleWindows()[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@2c1b194a]" started-at="2024-12-15T17:57:26 ICT" name="handleWindows" finished-at="2024-12-15T17:57:31 ICT" duration-ms="4690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleWindows -->
-      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
-    </test> <!-- Regression test all classes on firefox -->
-    <test started-at="2024-12-15T17:57:31 ICT" name="Regression test all classes on edge" finished-at="2024-12-15T17:57:59 ICT" duration-ms="28274">
-      <class name="automation.testsuite.DienMayNhapKhau">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.DienMayNhapKhau@121314f7]" started-at="2024-12-15T17:57:31 ICT" name="openBrowser" finished-at="2024-12-15T17:57:41 ICT" duration-ms="9391" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="zaloChat()[pri:0, instance:automation.testsuite.DienMayNhapKhau@121314f7]" started-at="2024-12-15T17:57:41 ICT" name="zaloChat" finished-at="2024-12-15T17:57:42 ICT" duration-ms="1184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- zaloChat -->
-      </class> <!-- automation.testsuite.DienMayNhapKhau -->
-      <class name="automation.testsuite.Day17_WindowsPopUp">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@130c12b7]" started-at="2024-12-15T17:57:42 ICT" name="openBrowser" finished-at="2024-12-15T17:57:52 ICT" duration-ms="9799" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="handleWindows()[pri:0, instance:automation.testsuite.Day17_WindowsPopUp@130c12b7]" started-at="2024-12-15T17:57:52 ICT" name="handleWindows" finished-at="2024-12-15T17:57:59 ICT" duration-ms="7894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleWindows -->
-      </class> <!-- automation.testsuite.Day17_WindowsPopUp -->
-    </test> <!-- Regression test all classes on edge -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- SortHang -->
+      </class> <!-- automation.testsuite.SortMayRuaChenBatTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
